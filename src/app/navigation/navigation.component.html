@@ -1,0 +1,80 @@
+<!-- Top toolbar -->
+
+<div class="mainTooolbar">
+    <h5>Dashboard</h5>
+    <span class="toolbar-spacer"></span>
+    <button mat-mini-fab [matMenuTriggerFor]="avatarDropDown" color="primary" class="toolbar-avatar">
+
+    </button>
+
+    <button (click)=toggleMenu() class="toggle-aside-menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+</div>
+
+<mat-menu #avatarDropDown="matMenu">
+    <mat-card>
+        <mat-card-header>
+            <mat-card-title>{{UserName}}</mat-card-title>
+        </mat-card-header>
+    </mat-card>
+
+    <button mat-menu-item (click)="logout()">
+        <mat-icon>exit_to_app</mat-icon>
+        <span>Sign out</span>
+    </button>
+</mat-menu>
+
+
+<!-- aside-menu -->
+
+<main class="main">
+
+    <section [@slideInOut] class="aside-menu" *ngIf="isMenuOpen">
+        <div class="aside-wrapper">
+            <div class="aside-logo-wrap">
+                <img src="https://demos.creative-tim.com/black-dashboard-react/static/media/react-logo.561f1671.png"
+                    alt="logo">
+                <p>Zingo</p>
+            </div>
+            <div class="line"></div>
+
+            <div class="aside-item-wrap">
+                <span class="material-icons">accessibility_new</span>
+                <a routerLink="all-users">All users</a>
+            </div>
+            <!-- ** -->
+            <div class="aside-item-wrap">
+                <span class="material-icons">apartment</span>
+                <a (click)=toggleCompanyMenu() routerLink="all-companies">All companies</a>
+            </div>
+             <!-- ** -->
+             <div class="aside-item-wrap category">
+                <div *ngIf="isCompanyDropdown">
+                    <label>By City</label>
+                    <input type="checkbox" placeholder="By City">
+                    <label>By Category</label>
+                    <input type="checkbox" placeholder="By Category">
+                </div>
+            </div>
+            <!-- ** -->
+            <div class="aside-item-wrap">
+                <span class="material-icons">local_shipping</span>
+                <a routerLink="app-all-couriers">All couriers</a>
+            </div>
+            <!-- ** -->
+            <div class="aside-item-wrap">
+                <span class="material-icons">store</span>
+                <a routerLink="app-all-companies">All couriers companies</a>
+            </div>
+        </div>
+    </section>
+
+    <div>
+        <router-outlet></router-outlet>
+    </div>
+
+</main>

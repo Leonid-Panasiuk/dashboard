@@ -1,0 +1,93 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.main {
+    background-color: #1E1E2E;
+    height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.material-icons {
+    color: white;
+}
+
+.children-data {
+    position: absolute;
+    left: 280px;
+    width: 63%;
+    top: 0%;
+}
+
+.children-heading {
+    text-align: center;
+    color: #fff;
+    font-size: 25px!important;
+}
+
+.children-data p {
+    color: #fff;
+}
+
+.children-card {
+    background-color: #27293D;
+    border-radius: .2857rem;
+    box-shadow: 0 1px 20px 0 rgba(0,0,0,.1);
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    animation: bounceInRight 1s;
+}
+
+.data-list {
+    padding: 40px;
+}
+
+.data-list li {
+    color: #fff;
+}
+
+@keyframes bounceInRight {
+    0% {
+       opacity: 0;
+       transform: translateX(2000px);
+    }
+    60% {
+       opacity: 1;
+       transform: translateX(-30px);
+    }
+    80% {
+       transform: translateX(10px);
+    }
+    100% {
+       transform: translateX(0);
+    }
+ } 
+
+ #table-list {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    animation: bounceInRight 1.3s;
+  }
+  
+  #table-list td, #table-list th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    color: white;
+  }
+  
+  #table-list th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #27293D;
+    color: white;
+}
+
+.category {
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,17 @@
+
+
+<main class="main">
+    <div *ngIf="wrongCreds">Кредли не туво</div>
+    <form class="login-form" [formGroup]="loginForm">
+        
+        
+        <label>Login</label>
+        <input formControlName="username" class="login-input" type="text" placeholder="login" required>
+
+        <label>Password</label>
+        <input formControlName="password" class="login-input" type="text" placeholder="Password" required>
+
+        <button [disabled]="!loginForm.valid" (click)="login()" class="login-btn" type="submit">Enter</button>
+
+    </form>
+</main>
