@@ -16,19 +16,17 @@ import { AuthService } from '../auth.service';
       transition(':leave', [
         animate('400ms ease-in', style({transform: 'translateX(-100%)'}))
       ])
-    ])
+    ]),
+    // trigger('slideInOut', [
+    //   transition(':enter', [
+    //     style({width: '0px'}),
+    //     animate('400ms ease-in', style({width: '230px'}))
+    //   ]),
+    //   transition(':leave', [
+    //     animate('400ms ease-in', style({width: '0px'}))
+    //   ])
+    // ])
   ]
-  // animations: [
-  //   trigger('slideInOut', [
-  //     transition(':enter', [
-  //       style({width: '0px'}),
-  //       animate('400ms ease-in', style({width: '230px'}))
-  //     ]),
-  //     transition(':leave', [
-  //       animate('400ms ease-in', style({width: '0px'}))
-  //     ])
-  //   ])
-  // ]
 })
 
 

@@ -3,15 +3,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: relative;
+    /* position: relative; */
     top: 40%;
     background-color: #fff;
     max-width: 300px;
-    margin: 0 auto;
+    margin: auto;
     border: 1px solid;
     border-radius: 10px;
     padding-bottom: 30px;
     padding-top: 30px;
+    height: 200px;
 }
 
 .login-form label {
@@ -25,7 +26,7 @@
     color: #000;
 }
 
-/* .login-btn {
+.login-btn {
     background-color: #FFFFFF;
     color: #555;
     padding: 15px 25px;
@@ -34,6 +35,14 @@
     letter-spacing: 1px;
     text-transform: uppercase;
     font-size: 12px;
-    border: 1px solid white;
-} */
+    border: 1px solid #555;
+    margin-bottom: 10px;
+}
+
+.form-error {
+    text-align: center;
+    color: red;
+    margin: 0 0 0px;
+
+}
 

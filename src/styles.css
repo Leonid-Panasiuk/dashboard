@@ -8,17 +8,21 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     height: 100vh;
     position: relative;
     overflow-x: hidden;
+    display: flex;
+    justify-content: space-between;
 }
 
 .material-icons {
     color: white;
 }
 
+.additional-menus {
+    width: 70%;
+}
+
 .children-data {
-    position: absolute;
-    left: 280px;
-    width: 63%;
-    top: 0%;
+    padding-right: 25px;
+    transition: all  5s;
 }
 
 .children-heading {
@@ -70,7 +74,6 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
     width: 100%;
-    animation: bounceInRight 1.3s;
   }
   
   #table-list td, #table-list th {

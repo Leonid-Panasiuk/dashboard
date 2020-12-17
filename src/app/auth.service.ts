@@ -9,7 +9,6 @@ export class AuthService {
   private token: string = 'uygj76g5g7u6ry5rgut766gt768ti8776465fu7';
 
   login(name: string, password: string): boolean {
-    debugger;
     if (name === "admin" && password === "admin"){
       localStorage.setItem('user', this.token);
       this.router.navigate(['']);
@@ -20,7 +19,6 @@ export class AuthService {
   }
 
   isLoggedIn() {
-    debugger;
     let token = localStorage.getItem('user');
 
     return token === this.token;
