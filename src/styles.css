@@ -22,7 +22,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .children-data {
     padding-right: 25px;
-    transition: all  5s;
+    transition: all  .8s;
 }
 
 .children-heading {
