@@ -1,41 +1,15 @@
 <div class="children-data">
-    <h1 class="children-heading">List of all users</h1>
-    <div class="children-card">
-        <table id="table-list">
-            <tr>
-              <th>Name</th>
-              <th>Phone</th>
-              <th>City</th>
-            </tr>
-            <tr>
-              <td>Alfreds Futterkiste</td>
-              <td>0930060946</td>
-              <td>Lviv</td>
-            </tr>
-            <tr>
-              <td>Berglunds snabbköp</td>
-              <td>0930060946</td>
-              <td>Lviv</td>
-            </tr>
-            <tr>
-              <td>Centro comercial Moctezuma</td>
-              <td>0930060946</td>
-              <td>Lviv</td>
-            </tr>
-            <tr>
-              <td>Ernst Handel</td>
-              <td>0930060946</td>
-              <td>Lviv</td>
-            </tr>
-            <tr>
-              <td>Island Trading</td>
-              <td>0930060946</td>
-              <td>Lviv</td>
-            </tr>
-            <tr>
-          </table>
-    </div>
-
-    
+  <h1 class="children-heading">List of all users</h1>
+  <div class="children-card">
+    <table id="table-list">
+      <tr>
+        <th class="table-field">Name</th>
+        <th class="table-field">Email</th>
+      </tr>
+      <tr *ngFor="let user of users">
+        <td class="table-field">{{user.name}}</td>
+        <td class="table-field">{{user.email}}</td>
+      </tr>
+    </table>
+  </div>
 </div>
-

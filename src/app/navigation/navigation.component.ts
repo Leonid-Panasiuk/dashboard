@@ -51,12 +51,5 @@ export class NavigationComponent implements OnInit {
     this.auth.logout();
   }
 
-  isCompanyDropdown = false;
-
-  toggleCompanyMenu() {
-    this.isCompanyDropdown = !this.isCompanyDropdown;
-    console.log('aa')
-  }
-
 }
 

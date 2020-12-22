@@ -13,6 +13,9 @@ import { AllCouriersComponent } from './all-couriers/all-couriers.component';
 import { AllCourierCompaniesComponent } from './all-courier-companies/all-courier-companies.component';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+
+
 
 @NgModule({
   declarations: [
@@ -22,7 +25,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     AllUsersComponent,
     AllCompaniesComponent,
     AllCouriersComponent,
-    AllCourierCompaniesComponent
+    AllCourierCompaniesComponent,
   ],
   imports: [
     BrowserModule,
@@ -30,7 +33,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     BrowserAnimationsModule,
     MaterialModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule 
   ],
   providers: [],
   bootstrap: [AppComponent]
